@@ -56,6 +56,11 @@ img{
   font-family: 'Poppins', sans-serif;
 }
 
+.container{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
 a{
   text-decoration: none;
 }
@@ -68,14 +73,55 @@ a{
   color: #ffe600;
 }
 
+.yellow-button{
+  background-color: #FFE604;
+  padding: 1.81rem 2.25rem;
+
+  font-weight: 700;
+  font-size: 1.25rem;
+
+  border: none;
+  border-radius: 3.75rem;
+}
+
+.contact-us{
+  background-color: #DF5E00;
+}
+
+.contact-us-content{
+  padding: 4.37rem 0;
+}
+
+.contact-us-content > div:first-child{
+  padding-left: 15.8rem;
+}
+
+.contact-us-content > div > h2{
+  padding-left: 30.68rem;
+
+  font-weight: 800;
+  font-size: 4.37rem;
+  line-height: 4.37rem; 
+}
+
+.contact-us-content > p{
+  padding: 4rem 0 2.125rem;
+
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.87rem;
+  line-height: 2.5rem;
+  word-spacing: 1rem;
+  letter-spacing: 0.2rem;
+}
+
+.contact-svg{
+  text-align: center;
+}
+
 footer{
   background-color: #222;
   color: #fff;
-}
-
-.footer-container{
-  max-width: 1440px;
-  margin: 0 auto;
 }
 
 .footer-content{
