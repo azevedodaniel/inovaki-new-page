@@ -75,7 +75,8 @@ a{
 
 .yellow-button{
   background-color: #FFE604;
-  padding: 1.81rem 6rem 1.81rem 3.18rem;
+  padding: 0 2.3rem;
+  height: 4rem;
 
   font-weight: 700;
   font-size: 1.25rem;
@@ -83,9 +84,21 @@ a{
   border: none;
   border-radius: 3.75rem;
 
-  background-image: url(../assets/img/Back-Arrow.png);
-  background-repeat: no-repeat;
-  background-position: 14.37rem 1rem;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  transition: 200ms;
+  cursor: pointer;
+}
+
+.yellow-button > img{
+  width: 2rem;
+}
+
+.yellow-button:hover{
+  transform: scale(1.1);
 }
 
 .cases-and-projects{
@@ -112,8 +125,39 @@ a{
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
 
+  padding: 2.5rem 0;
+}
+
+.cases-flex{
   display: flex;
-  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  gap: 3.125rem;
+}
+
+.cases-information,
+.cases-img{
+  flex: 1;
+}
+
+.cases-information > h2{
+  font-weight: 800;
+  font-size: 2.24rem;
+  line-height: 2.87rem;
+  text-transform: uppercase;
+
+  padding-bottom: 1.4rem;
+}
+
+.cases-information > p{
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 2.18rem;
+}
+
+.cases-img > img{
+  width: 33rem;
 }
 
 .contact-us{
