@@ -75,13 +75,45 @@ a{
 
 .yellow-button{
   background-color: #FFE604;
-  padding: 1.81rem 2.25rem;
+  padding: 1.81rem 6rem 1.81rem 3.18rem;
 
   font-weight: 700;
   font-size: 1.25rem;
 
   border: none;
   border-radius: 3.75rem;
+
+  background-image: url(../assets/img/Back-Arrow.png);
+  background-repeat: no-repeat;
+  background-position: 14.37rem 1rem;
+}
+
+.cases-and-projects{
+  background-color: #FFFFE4;
+}
+
+.cases-and-projects > h1,
+.cases-and-projects > h1 > strong{
+  text-align: center;
+
+  font-size: 3.125rem;
+  line-height: 4.125rem;
+}
+
+.cases-and-projects > h1 > strong{
+  font-weight: 800;
+}
+
+.cases-and-projects > h1{
+  font-weight: 300;
+}
+
+.cases-content > div:first-child{
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+
+  display: flex;
+  flex-direction: row;
 }
 
 .contact-us{
@@ -97,7 +129,7 @@ a{
 }
 
 .contact-us-content > div > h2{
-  padding-left: 30.68rem;
+  padding-left: 34.68rem;
 
   font-weight: 800;
   font-size: 4.37rem;
@@ -115,8 +147,9 @@ a{
   letter-spacing: 0.2rem;
 }
 
-.contact-svg{
-  text-align: center;
+.contact-touch{
+  width: 5.62rem;
+  margin: 0 auto;
 }
 
 footer{
@@ -150,7 +183,8 @@ footer{
   padding-left: 6.5rem;
 }
 
-.footer-contact > div > h2, strong{
+.footer-contact > div > h2,
+.footer-contact > div > h2 > strong{
   font-size: 3.75rem;
   font-weight: 900;
 }
