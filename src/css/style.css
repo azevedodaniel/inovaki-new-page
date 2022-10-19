@@ -208,6 +208,53 @@ a{
   text-shadow: #000 0 0.25rem 0.87rem
 }
 
+.clients{
+  background-color: #FFFFE4;
+}
+
+.clients-flex{
+  display: flex;
+  gap: 3.43rem;
+  padding: 4rem 0;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.clients-flex > div{
+  flex: 1;
+}
+
+.clients-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.clients-flex > div > h3{
+  color: #D80404;
+
+  font-weight: 300;
+  font-size: 1.87rem;
+
+  padding-bottom: 1.4rem;
+}
+
+.clients-flex > div > p{
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+
+  padding-bottom: 1.87rem;
+}
+
+.clients-flex > div > a{
+  color: #000;
+
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
 .contact-us{
   background-color: #DF5E00;
 }
