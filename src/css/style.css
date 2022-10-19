@@ -56,6 +56,10 @@ img{
   font-family: 'Poppins', sans-serif;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 .container{
   max-width: 1140px;
   margin: 0 auto;
@@ -89,7 +93,7 @@ a{
   align-items: center;
   gap: 1rem;
 
-  transition: 200ms;
+  transition: transform 200ms;
   cursor: pointer;
 }
 
@@ -101,8 +105,14 @@ a{
   transform: scale(1.1);
 }
 
+.cases-button{
+  padding: 3.75rem 0;
+  text-align: center;
+}
+
 .cases-and-projects{
-  background-color: #FFFFE4;
+  background-image: url(../assets/img/clouds\ 1.png);
+  background: no-repeat;
 }
 
 .cases-and-projects > h1,
@@ -160,6 +170,44 @@ a{
   width: 33rem;
 }
 
+.cards-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.cards-grid > figure{
+  height: 30rem;
+
+  transition: transform 200ms, filter 200ms ease-in-out;
+  position: relative;
+}
+
+.cards-grid > figure > img{
+  height: 100%;
+  filter: brightness(70%);
+}
+
+.cards-grid > figure:hover{
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.cards-grid > figure > img:hover{
+  filter: none;
+}
+
+.cards-grid > figure > figcaption{
+  position: absolute;
+  left: 1.87rem;
+  bottom: 3.6rem;
+
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  text-shadow: #000 0 0.25rem 0.87rem
+}
+
 .contact-us{
   background-color: #DF5E00;
 }
@@ -168,13 +216,16 @@ a{
   padding: 4.37rem 0;
 }
 
-.contact-us-content > div:first-child{
-  padding-left: 15.8rem;
+.contact-us-flex{
+  display: flex;
+  justify-content: center;
 }
 
-.contact-us-content > div > h2{
-  padding-left: 34.68rem;
+.contact-us-flex > div:last-child{
+  padding-top: 3.5rem;
+}
 
+.contact-us-content div > div > h2{
   font-weight: 800;
   font-size: 4.37rem;
   line-height: 4.37rem; 
