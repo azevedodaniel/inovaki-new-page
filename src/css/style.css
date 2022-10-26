@@ -112,6 +112,9 @@ a{
 
 .top{
   background-image: url(../assets/img/background-top.png);  
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
 }
 
 .navbar{
@@ -148,11 +151,11 @@ a{
   font-weight: 400;
   font-size: 3.75rem;
 
-  padding-left: 16rem;
-  padding-bottom: 6rem;
+  padding: 6rem 0 4rem 16rem;
   
   opacity: 0.15;
-  width: 2500px;
+  display: flex;
+  overflow: hidden;
 }
 
 .who-whe-are-title > span{
@@ -161,6 +164,8 @@ a{
 
 .who-we-are-content{
   display: flex;
+  justify-content: center;
+  align-items: center;
 
   padding-bottom: 5.3rem;
 }
@@ -169,12 +174,18 @@ a{
   flex: 1;
 }
 
+.who-we-are-content > div:first-child{
+  text-align: center;
+}
+
+.who-we-are-content > div > img{
+  width: 10rem;
+}
+
 .who-we-are-content > div:first-child > p{
   font-weight: 300;
   font-size: 2.2rem;
   line-height: 2.5rem;
-
-  text-align: center;
 }
 
 .who-we-are-content > div:first-child > p > mark > span{
