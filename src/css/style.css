@@ -121,7 +121,7 @@ a{
   display: flex;
   justify-content: space-between;
 
-  padding: 3.1rem 2.5rem 10rem 2.5rem;
+  padding: 3.1rem 2.5rem 0 2.5rem;
 }
 
 .navbar > p{
@@ -134,12 +134,17 @@ a{
   width: 1.56rem;
 }
 
+.top > div:last-child{
+  display: flex;
+  align-items: center;
+  
+  height: 85%;
+}
+
 .top > div > p{
   font-weight: 900;
   font-size: 3.4rem;
   line-height: 3.75rem;
-
-  padding-bottom: 16rem;
 }
 
 .who-we-are{
