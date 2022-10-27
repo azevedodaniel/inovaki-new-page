@@ -61,7 +61,7 @@ body{
 }
 
 .container{
-  max-width: 1140px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -156,7 +156,7 @@ a{
   font-weight: 400;
   font-size: 3.75rem;
 
-  padding: 6rem 0 4rem 16rem;
+  padding: 6rem 0 4rem 40rem;
   
   opacity: 0.15;
   display: flex;
@@ -260,12 +260,15 @@ a{
 
 .vertical-box{
   padding: 3.125rem;
+
+  display: flex;
 }
 
 .box{
   width: 50%;
-  float: left;
   height: 4.75rem;
+  
+  flex: 1;
 }
 
 .vertical-line{
