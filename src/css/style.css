@@ -61,7 +61,7 @@ body{
 }
 
 .container{
-  max-width: 1440px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
@@ -110,6 +110,28 @@ a{
   transform: scale(1.1);
 }
 
+.cases-button{
+  background-color: #FFE604;
+  padding: 0 2.3rem;
+  height: 4rem;
+
+  font-weight: 700;
+  font-size: 1.25rem;
+
+  border: none;
+
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  cursor: pointer;
+}
+
+.cases-button > img{
+  width: 2rem;
+}
+
 .top{
   background-image: url(../assets/img/background-top.png);  
   background-repeat: no-repeat;
@@ -152,15 +174,14 @@ a{
 }
 
 .who-whe-are-title{
-  text-align: right;
   font-weight: 400;
   font-size: 3.75rem;
 
-  padding: 6rem 0 4rem 40rem;
+  padding: 6rem 0 4rem 30rem;
   
   opacity: 0.15;
-  display: flex;
   overflow: hidden;
+  display: flex;
 }
 
 .who-whe-are-title > span{
@@ -196,7 +217,6 @@ a{
 .who-we-are-content > div:first-child > p > mark > span{
   font-weight: 800;
 }
-
 
 .who-we-are-content > div > p > mark{
   background-color: #1c1c1c;
@@ -247,15 +267,49 @@ a{
   padding-bottom: 1.87rem;
 }
 
-.box-1 > img:first-child,
-.box-2 > img:last-child{
+.areas-flex > figure{
+  position: relative;
+}
+
+.areas-flex > figure > figcaption{
+  position: absolute;
+  top: 2.18rem;
+  left: 2.18rem;
+}
+
+.box-1 > figure:first-child > img,
+.box-2 > figure:last-child > img{
   width: 18.7rem;
   height: 18.7rem;
 }
 
-.box-1 > img:last-child,
-.box-2 > img:first-child{
+.box-1 > figure:last-child > img,
+.box-2 > figure:first-child > img{
   height: 18.7rem;
+}
+
+.box-1 > figure > figcaption > div > img,
+.box-2 > figure > figcaption > div > img{
+  width: 8.1rem;
+  padding-bottom: 1rem;
+}
+
+.box-1 > figure > figcaption > div > p,
+.box-2 > figure > figcaption > div > p{
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  width: 75%;
+
+  padding-bottom: 2rem;
+}
+
+.box-1 > figure > figcaption > div > a,
+.box-2 > figure > figcaption > div > a{
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #000;
 }
 
 .vertical-box{
