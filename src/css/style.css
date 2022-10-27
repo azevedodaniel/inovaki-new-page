@@ -110,12 +110,13 @@ a{
   transform: scale(1.1);
 }
 
-.cases-button{
+.cases-and-projects-button{
   background-color: #FFE604;
-  padding: 0 2.3rem;
-  height: 4rem;
+  padding: 0 0.9rem;
+  height: 3rem;
+  margin-bottom: 0.7rem;
 
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1.25rem;
 
   border: none;
@@ -128,7 +129,7 @@ a{
   cursor: pointer;
 }
 
-.cases-button > img{
+.cases-and-projects-button > img{
   width: 2rem;
 }
 
@@ -340,14 +341,26 @@ a{
   padding: 1.25rem 0;
 }
 
-.cases-button{
-  padding: 3.75rem 0;
-  text-align: center;
-}
-
 .cases-and-projects{
   background-image: url(../assets/img/clouds\ 1.png);
   background: no-repeat;
+}
+
+.cases-aplication{
+  display: flex;
+  justify-content: space-between;
+}
+
+.cases-aplication > div > button{
+  width: 4rem;
+  height: 4rem;
+
+  color: #fff;
+  font-weight: 700;
+  font-size: 2.75rem;
+  text-align: center;
+
+  background-color: #000;
 }
 
 .cases-and-projects > h1,
@@ -366,6 +379,7 @@ a{
   font-weight: 300;
 
   padding-top: 5rem;
+  padding-bottom: 3.1rem;
 }
 
 .cases-content > div:first-child{
@@ -405,6 +419,11 @@ a{
 
 .cases-img > img{
   width: 33rem;
+}
+
+.cases-button{
+  padding: 3.75rem 0;
+  text-align: center;
 }
 
 .cards-grid{
