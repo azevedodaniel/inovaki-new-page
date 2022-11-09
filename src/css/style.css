@@ -114,7 +114,6 @@ a{
   background-color: #FFE604;
   padding: 0 0.9rem;
   height: 3rem;
-  margin-bottom: 0.7rem;
 
   font-weight: 400;
   font-size: 1.25rem;
@@ -127,6 +126,9 @@ a{
   gap: 1rem;
 
   cursor: pointer;
+
+  position: absolute;
+  top: -65px;
 }
 
 .cases-and-projects-button > img{
@@ -387,14 +389,10 @@ a{
   font-weight: 300;
 
   padding-top: 5rem;
-  padding-bottom: 3.1rem;
 }
 
-.cases-content > div:first-child{
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
-
-  padding: 2.5rem 0;
+.cases-content{
+  padding-top: 64px;
 }
 
 .cases-flex{
@@ -403,6 +401,10 @@ a{
   align-items: center;
 
   gap: 3.125rem;
+
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 2.5rem 0;
 }
 
 .cases-information,
@@ -434,6 +436,36 @@ a{
   text-align: center;
 }
 
+.swiper-button-next, 
+.swiper-button-prev{
+  top: 22px;
+  width: 4rem;
+  height: 4rem;
+
+  color: #fff;
+  font-weight: 700;
+  font-size: 2.75rem;
+  text-align: center;
+
+  background-color: #000;
+
+  content: ' ';
+}
+
+.swiper-button-next{
+  right: 0;
+  left: auto;
+}
+
+.swiper-button-prev{
+  right: 70px;
+  left: auto;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+  content: ' ';
+}
 .cards-grid{
   display: grid;
   grid-template-columns: repeat(4, 1fr);

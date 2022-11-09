@@ -6,11 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inovaki</title>
 
-  <link rel="stylesheet" href="../src/css/style.css">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+  <link rel="stylesheet" href="../src/css/style.css">
+
 </head>
 <body>
   <h1>inovaki</h1>
@@ -150,18 +154,8 @@
       <strong>CASES</strong> E PROJETOS
     </h1>
 
-    <div class="cases-aplication container">
-      <div class="cases-and-projects-button">
-        <img src="../src/assets/img/tag-window.png">
-        VTEX - Aplicação Web
-      </div>
-      <div>
-        <button><</button>
-        <button>></button>
-      </div>
-    </div>
-
     <div class="cases-content container">
+      <!--
       <div>
         <div class="cases-flex">
           <div class="cases-information">
@@ -178,13 +172,100 @@
           </div>
         </div>
       </div>
-
-      <div class="cases-button">
-        <button class="yellow-button">
-          <span>VER TODOS OS PROJETOS</span>
-          <img src="../src/assets/img/Back-Arrow.png">
-        </button>
+    </div>
+      -->
+    <div class="swiper mySwiper cases-content container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"> 
+          <div class="cases-and-projects-button">
+            <img src="../src/assets/img/tag-window.png">
+            VTEX - Aplicação Web
+          </div>
+          <div class="cases-flex">
+            <div class="cases-information">
+              <h2>
+                AQUAMAR - Implementação 
+                do carrinho de compras 
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
+              </p>
+            </div>
+            <div class="cases-img">
+              <img src="../src/assets/img/image-2.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="cases-and-projects-button">
+            <img src="../src/assets/img/tag-window.png">
+            VTEX - Aplicação Web
+          </div>
+          <div class="cases-flex">
+            <div class="cases-information">
+              <h2>
+                AQUAMAR - Implementação 
+                do carrinho de compras 
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
+              </p>
+            </div>
+            <div class="cases-img">
+              <img src="../src/assets/img/image-2.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="cases-and-projects-button">
+            <img src="../src/assets/img/tag-window.png">
+            VTEX - Aplicação Web
+          </div>
+          <div class="cases-flex">
+            <div class="cases-information">
+              <h2>
+                AQUAMAR - Implementação 
+                do carrinho de compras 
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
+              </p>
+            </div>
+            <div class="cases-img">
+              <img src="../src/assets/img/image-2.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="cases-and-projects-button">
+            <img src="../src/assets/img/tag-window.png">
+            VTEX - Aplicação Web
+          </div>
+          <div class="cases-flex">
+            <div class="cases-information">
+              <h2>
+                AQUAMAR - Implementação 
+                do carrinho de compras 
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
+              </p>
+            </div>
+            <div class="cases-img">
+              <img src="../src/assets/img/image-2.png" alt="">
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="swiper-button-next">></div>
+      <div class="swiper-button-prev"><</div>
+    </div>
+
+    <div class="cases-button">
+      <button class="yellow-button">
+        <span>VER TODOS OS PROJETOS</span>
+        <img src="../src/assets/img/Back-Arrow.png">
+      </button>
     </div>
   </section>
 
@@ -340,5 +421,18 @@
     </section>
   </footer>
 
+
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
 </body>
 </html>
